@@ -1,3 +1,16 @@
 body {
-  background-color: #aaa;
+  display: flex;
+  background-image: url(./images/luke-miller-kf0FdiZy0uA-unsplash.jpg);
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  height: 100vh;
+  width: auto;
+  background-color: rgb(188, 193, 203);
+}
+
+.form-container {
+  display: flex;
 }
