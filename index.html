@@ -12,91 +12,97 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <aside>
-      Photo by
-      <a
-        href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-        >Luke Miller</a
-      >
-      on
-      <a
-        href="https://unsplash.com/photos/the-night-sky-over-a-mountain-range-and-a-body-of-water-kf0FdiZy0uA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-        >Unsplash</a
-      >
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="/sign-up-form/images/node-16-svgrepo-com.svg"
+          alt="Lorem ipsum"
+        />
+        <p class="logo-text">Lorem Ipsum</p>
+      </div>
+      <p class="img-credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Luke Miller</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/the-night-sky-over-a-mountain-range-and-a-body-of-water-kf0FdiZy0uA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
     </aside>
     <section class="content">
-      <h2>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams.
-      </h2>
-      <h2>Sign up <italic>now</italic> to get started</h2>
-      <br />
-      <h2>You <italic>know</italic> you want to.</h2>
+      <div class="title">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />Sign
+          up <i>now</i> to get started.<br />
+          <br />You <i>know</i> you want to.
+        </p>
+      </div>
       <form action="#" method="get">
-        <h2>Let's do this!</h2>
         <div class="form-container">
-          <div class="first-column">
-            <label for="first-name">
-              <span>First name</span>
+          <legend>Let's do this!</legend>
+          <div class="form-inputs">
+            <div class="first-column">
+              <label for="first-name">
+                <span>First name</span>
+              </label>
               <input
                 type="text"
                 id="first-name"
                 name="user-first-name"
                 required
               />
-            </label>
-            <label for="first-name">
-              <span>First name</span>
+              <label for="mail">
+                <span>Email</span>
+              </label>
+              <input type="email" id="mail" name="user-email" required />
+              <label for="password">
+                <span>Password</span>
+              </label>
               <input
-                type="text"
-                id="first-name"
-                name="user-first-name"
+                type="password"
+                id="password"
+                name="user-password"
                 required
               />
-            </label>
-            <label for="first-name">
-              <span>First name</span>
+            </div>
+            <div class="second-column">
+              <label for="last-name">
+                <span>Last name</span>
+              </label>
               <input
                 type="text"
-                id="first-name"
-                name="user-first-name"
+                id="last-name"
+                name="user-last-name"
                 required
               />
-            </label>
-          </div>
-          <div class="second-column">
-            <label for="first-name">
-              <span>First name</span>
+              <label for="phone">
+                <span>Phone Number</span>
+              </label>
+              <input type="tel" id="phone" name="user-phone" />
+              <label for="confirm-password">
+                <span>Confirm Password</span>
+              </label>
               <input
-                type="text"
-                id="first-name"
-                name="user-first-name"
+                type="password"
+                id="confirm-password"
+                name="user-password"
                 required
               />
-            </label>
-            <label for="first-name">
-              <span>First name</span>
-              <input
-                type="text"
-                id="first-name"
-                name="user-first-name"
-                required
-              />
-            </label>
-            <label for="first-name">
-              <span>First name</span>
-              <input
-                type="text"
-                id="first-name"
-                name="user-first-name"
-                required
-              />
-            </label>
+            </div>
           </div>
         </div>
+        <button id="submit-btn" type="submit">Create Account</button>
       </form>
     </section>
+
     <footer></footer>
   </body>
 </html>
