@@ -18,23 +18,25 @@
       <div class="logo-container">
         <img
           class="logo"
-          src="/sign-up-form/images/node-16-svgrepo-com.svg"
+          src="/sign-up-form/images/utn-2.svg"
           alt="Lorem ipsum"
         />
-        <p class="logo-text">Lorem Ipsum</p>
+        <p class="logo-text">UTN</p>
       </div>
-      <p class="img-credits">
-        Photo by
-        <a
-          href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >Luke Miller</a
-        >
-        on
-        <a
-          href="https://unsplash.com/photos/the-night-sky-over-a-mountain-range-and-a-body-of-water-kf0FdiZy0uA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >Unsplash</a
-        >
-      </p>
+      <div class="img-credits">
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Luke Miller</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/the-night-sky-over-a-mountain-range-and-a-body-of-water-kf0FdiZy0uA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </div>
     </aside>
     <section class="content">
       <div class="title">
@@ -48,10 +50,11 @@
       <form action="#" method="get">
         <div class="form-container">
           <legend>Let's do this!</legend>
+          <p class="req">* required field</p>
           <div class="form-inputs">
             <div class="first-column">
               <label for="first-name">
-                <span>First name</span>
+                <span>First name</span><span aria-label="required">*</span>
               </label>
               <input
                 type="text"
@@ -60,11 +63,11 @@
                 required
               />
               <label for="mail">
-                <span>Email</span>
+                <span>Email</span><span aria-label="required">*</span>
               </label>
               <input type="email" id="mail" name="user-email" required />
               <label for="password">
-                <span>Password</span>
+                <span>Password</span><span aria-label="required">*</span>
               </label>
               <input
                 type="password"
@@ -75,7 +78,7 @@
             </div>
             <div class="second-column">
               <label for="last-name">
-                <span>Last name</span>
+                <span>Last name</span><span aria-label="required">*</span>
               </label>
               <input
                 type="text"
@@ -88,7 +91,8 @@
               </label>
               <input type="tel" id="phone" name="user-phone" />
               <label for="confirm-password">
-                <span>Confirm Password</span>
+                <span>Confirm Password</span
+                ><span aria-label="required">*</span>
               </label>
               <input
                 type="password"
@@ -100,9 +104,10 @@
           </div>
         </div>
         <button id="submit-btn" type="submit">Create Account</button>
+        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
       </form>
     </section>
-
+    <script src="script.js"></script>
     <footer></footer>
   </body>
 </html>
